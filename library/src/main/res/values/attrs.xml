@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ItemView">
+        <attr name="text_left" format="string" />
+        <attr name="text_right" format="string" />
+        <attr name="text_hint" format="string" />
+        <attr name="icon_left" format="integer" />
+        <attr name="icon_right" format="integer" />
+        <attr name="text_size_left" format="dimension" />
+        <attr name="text_size_right" format="dimension" />
+        <attr name="text_color_left" format="color" />
+        <attr name="text_color_right" format="color" />
+        <attr name="show_icon_left" format="boolean" />
+        <attr name="show_icon_right" format="boolean" />
+        <attr name="show_divider_bottom" format="boolean" />
+        <attr name="show_divider_top" format="boolean" />
+        <attr name="item_height" format="dimension" />
+        <attr name="icon_size_left" format="dimension" />
+        <attr name="icon_size_right" format="dimension" />
+    </declare-styleable>
+
+</resources>
