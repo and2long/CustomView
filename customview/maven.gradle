@@ -8,7 +8,7 @@ def siteUrl = 'https://github.com/and2long/CustomView' // 项目主页。
 def gitUrl = 'https://github.com/and2long/CustomView.git' // Git仓库的url。https://github.com/huangshuyuan/UtilsDemo.git
 // 唯一包名，比如compile 'com.hsy.utils:utilslibrary:1.0.1'中的com.hsy.utils就是这里配置的。
 // :utilslibrary后面会根据项目名称得到
-group = "com.andlong"
+group = "com.andlong.library"
 install {
     repositories.mavenInstaller {
         // 生成pom.xml和参数
@@ -16,8 +16,8 @@ install {
             project {
                 packaging 'aar'
                 // 项目描述，复制我的话，这里需要修改。
-                name 'utilslibrary'// 可选，项目名称。
-                description 'Android Utils'// 可选，项目描述
+                name 'CustomView'// 可选，项目名称。
+                description 'CustomView'// 可选，项目描述
                 url siteUrl// 项目主页，这里是引用上面定义好。
 
                 // 软件开源协议，现在一般都是Apache License2.0吧，复制我的，这里不需要修改。
@@ -77,9 +77,9 @@ bintray {
     configurations = ['archives']
     pkg {
         // 上传到maven库。（这里要特别注意，如果写了maven报404错误，请在bintray创建一个仓库，这里填改成你创建的仓库的名字，如何创建请看上方。）
-        repo = "CustomView"
+        repo = "library"
         // 发布到Bintray上的项目名字，这里的名字不是compile 'com.hsy.utils:utilslibrary:1.0.1'中的utilslibrary。
-        name = "com.and2long.CustomView"
+        name = "CustomView"
         userOrg = 'and2long'// Bintray的用户名。
         websiteUrl = siteUrl
         vcsUrl = gitUrl
