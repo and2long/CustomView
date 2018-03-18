@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout llContanier = findViewById(R.id.llContanier);
 
-        ItemView itemView = new ItemView(this);
-        itemView.setItemHeight(65)                             //控件整体高度
+        ItemView itemView = new ItemView(this)
+                .setItemHeight(65)                             //控件整体高度
                 .setTextLeft("安")                              //左侧文字
                 .setTextRight("卓")                             //右侧文字
                 .setHintTextRight("hint")                       //右侧隐藏文字
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 .showIconRight(true)                            //显示右侧图标
                 .setIconSizeLeft(40)                            //左侧图标大小
                 .setIconSizeRight(50)                           //右侧图标大小
-                .showDividerTop(true)                           //显示顶部分割线
+                .showDividerTop(false)                           //显示顶部分割线
                 .showDividerBottom(true);                       //显示顶部分割线
 
         llContanier.addView(itemView);

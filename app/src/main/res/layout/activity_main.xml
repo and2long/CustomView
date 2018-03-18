@@ -5,7 +5,6 @@
     android:id="@+id/llContanier"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.and2long.customviewdemo.MainActivity">
 
@@ -13,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:icon_left="@drawable/ic_android"
-        app:text_hint="卓"
-        app:text_left="安" />
+        app:text_left="切换语言" />
 
-    <TextView
+    <com.and2long.customview.ItemView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/default_margin"
-        android:text="++++++"
-        android:textSize="20sp" />
+        app:icon_left="@drawable/ic_info_outline"
+        app:text_left="当前版本"
+        app:text_right="1.0.0" />
+
 
 </LinearLayout>
