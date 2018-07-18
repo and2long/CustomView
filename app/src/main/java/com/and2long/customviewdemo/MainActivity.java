@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         ItemView itemView = new ItemView(this)
                 .setItemHeight(65)                             //控件整体高度
-                .setTextLeft("安")                              //左侧文字
+                .setTextLeft("安卓开发者AndroidDeveloper")                              //左侧文字
                 .setTextRight("卓")                             //右侧文字
                 .setHintTextRight("hint")                       //右侧隐藏文字
                 .setTextSizeLeft(20)                            //左侧文字大小

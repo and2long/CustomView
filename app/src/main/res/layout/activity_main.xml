@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:icon_left="@drawable/ic_info_outline"
-        app:text_left="当前版本"
+        app:text_left="当前版本-当前版本-当前版本-当前版本-当前版本-"
         app:text_right="1.0.0" />
 
 
